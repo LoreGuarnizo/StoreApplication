@@ -1,0 +1,27 @@
+<!--
+<md-card class="formAll">    
+    <md-toolbar color="primary">
+        <h1> Videos </h1>
+    </md-toolbar>
+    <md-card class="formCenter w3-col s4 w3-center" *ngFor="let category of categories">
+        <md-card-header>
+            <md-card-title>
+                <h3> {{ video.name }} </h3>
+            </md-card-title>
+        </md-card-header>
+        <md-card-content style="margin: 0px">
+            <a [routerLink]="['/app-video-detail',category._id]">
+                <video class="videoSize" controls (play)="pauseAllOtherVideos(video._id)" [id]="category.id">
+                    Browser not supported
+                    <source src="http://localhost:3000/{{ video.url }}" type="video/mp4" />
+                </video>
+            </a>                
+        </md-card-content>
+        <rating style="margin: 0;padding: 0 !important" [(ngModel)]="video.average" [max]="5" fullIcon="★" emptyIcon="☆" [readonly]="true"
+                [disabled]="false" [required]="true" [float]="true" [titles]="['one', 'two', 'three', 'four', 'five']">
+            </rating>
+            <p class="read-more-wrap"> {{ video.description }} </p>
+
+    </md-card>
+</md-card>
+-->
