@@ -1,30 +1,15 @@
-<!--
- <md-card class="formAll">    
-    <md-toolbar color="primary">
-        <h1> Categories </h1>
-    </md-toolbar>
-    <md-card class="formCenter w3-col s4 w3-center" *ngFor="let category of categories">
-        <md-card-header>            
-                <img class="avatar" [src]="category.icon_img">
-                <md-card-title>
-                    <h3> {{ category.audience_target }} </h3>
-                </md-card-title>             
-        </md-card-header>
-        <md-card-content style="margin: 0px">
-                     <a [routerLink]="['/app-video-detail',category._id]">  </a>    
-        </md-card-content>
-    </md-card>
-</md-card> -->
 
-<h2>Categorias</h2>
+<div id="title">
+  <h2 class="w3-center">Categorias</h2>
+</div>
 <div class="content w3-col s4" *ngFor="let category of categories">   
     <div class="item" [ngStyle]="{'background-color': category.key_color}">		
       <a href="https://www.meetup.com/es/find/outdoors-adventure/">					
         <img [src]="category.icon_img">                    
       </a>              	
     </div>
-    <div>
-        <h4 >{{ category.audience_target }}</h4>
+    <div class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+        <h4>{{ category.audience_target }}</h4>
     </div>
   </div>
   
