@@ -61,6 +61,7 @@ export class TransformationService {
       icon_img: data.icon_img,
       header_title: data.header_img,
       description: data.description,
+      key_color : data.key_color,
       applications : []
     }
     return category;

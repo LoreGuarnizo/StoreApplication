@@ -10,6 +10,8 @@ import { ApplicationListComponent } from './application-list/application-list.co
 import { DataService } from './data.service';
 import { TransformationService } from './transformation.service';
 
+import { MdButtonModule, MdToolbarModule,MdInputModule,MdCardModule } from '@angular/material';
+
 const appRoutes: Routes = [
   { path: 'app-welcome', component: WelcomeComponent },
   { path: 'app-application-list', component: ApplicationListComponent },
@@ -32,7 +34,11 @@ const appRoutes: Routes = [
     { enableTracing: false } // <-- debugging purposes only
   ),
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    MdButtonModule, 
+    MdToolbarModule,
+    MdInputModule,
+    MdCardModule
   ],
   providers: [DataService,TransformationService],
   bootstrap: [AppComponent]

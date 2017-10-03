@@ -5,5 +5,6 @@ export class Category{
     icon_img:string;
     header_title:string;
     description:string;    
+    key_color : string;
     applications : Application[];
 }
